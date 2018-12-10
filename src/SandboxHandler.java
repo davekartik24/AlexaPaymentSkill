@@ -2,13 +2,11 @@ import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 
 import com.amazon.ask.model.Response;
 
-import java.util.Date;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.Optional;
-import java.util.Random;
 
 public class SandboxHandler implements com.amazon.ask.dispatcher.request.handler.RequestHandler {
-
-    private final Random random = new Random(new Date().getTime());
 
     @Override
     public boolean canHandle(HandlerInput handlerInput) {
@@ -17,8 +15,27 @@ public class SandboxHandler implements com.amazon.ask.dispatcher.request.handler
 
     @Override
     public Optional<Response> handle(HandlerInput handlerInput) {
-        int number = random.nextInt(6) + 1;
-        String speechText = "aaaaaaa is " + number;
+        String speechText = sandboxStatus();
         return handlerInput.getResponseBuilder().withSpeech(speechText).build();
+    }
+
+    public String sandboxStatus() {
+
+        try {
+            URL siteURL = new URL("https://www.testvantivcnp.com/sandbox/status");
+            HttpURLConnection connection = (HttpURLConnection) siteURL.openConnection();
+            connection.setRequestMethod("GET");
+            connection.setConnectTimeout(3000);
+            connection.connect();
+
+            if (connection.getResponseCode() == 200) {
+                return "sandbox is up";
+            } else {
+                return "sandbox is down";
+            }
+        } catch (Exception e) {
+            return "error in connecting please contact world pay";
+
+        }
     }
 }

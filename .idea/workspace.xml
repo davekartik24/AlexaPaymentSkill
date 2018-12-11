@@ -7,7 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea696a49-1e6b-4c2f-a79a-686413c727c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/SandboxHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SandboxHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PaymentSkillStreamHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlexaPaymentSkill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaPaymentSkill.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AlexaPaymentSkill_jar/AlexaPaymentSkill.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/AlexaPaymentSkill_jar/AlexaPaymentSkill.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlexaPaymentSkill/PaymentSkillHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlexaPaymentSkill/SandboxHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentSkillHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SandboxHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/SandboxHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unitTestCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/unitTestCheck.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PaymentSkillHandler.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/PaymentSkillStreamHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,22 +41,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/amazon/alexa/ask-sdk-core/2.9.2/ask-sdk-core-2.9.2.jar!/com/amazon/ask/CustomSkill.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+            <state relative-caret-position="133">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SandboxHandler.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/handler/SandboxHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+            <state relative-caret-position="363">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unitTestCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/amazon/alexa/ask-sdk-runtime/2.9.2/ask-sdk-runtime-2.9.2.jar!/com/amazon/ask/request/dispatcher/impl/BaseRequestDispatcher.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -68,9 +95,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/PaymentSkillHandler.java" />
-        <option value="$PROJECT_DIR$/test/unitTestCheck.java" />
         <option value="$PROJECT_DIR$/src/SandboxHandler.java" />
+        <option value="$PROJECT_DIR$/src/PaymentSkillHandler.java" />
+        <option value="$PROJECT_DIR$/src/PaymentSkillStreamHandler.java" />
+        <option value="$PROJECT_DIR$/test/unitTestCheck.java" />
       </list>
     </option>
   </component>
@@ -95,17 +123,6 @@
             <path>
               <item name="alexa-payment-skill" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlexaPaymentSkill" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alexa-payment-skill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlexaPaymentSkill" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alexa-payment-skill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlexaPaymentSkill" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -116,11 +133,6 @@
             <path>
               <item name="alexa-payment-skill" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="alexa-payment-skill" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="com.amazonaws:aws-java-sdk-lambda:1.11.32" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -137,9 +149,9 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544479241905" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544550637327" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../VantivGit/payfac-mp-sdk-java/build.gradle" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -161,11 +173,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.unitTestCheck">
+  <component name="RunManager" selected="JUnit.unitTestCheck.handleRequest">
     <configuration name="unitTestCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AlexaPaymentSkill" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="unitTestCheck" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="unitTestCheck.handleRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AlexaPaymentSkill" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="unitTestCheck" />
+      <option name="METHOD_NAME" value="handleRequest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,6 +198,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.unitTestCheck.handleRequest" />
         <item itemvalue="JUnit.unitTestCheck" />
         <item itemvalue="JAR Application.AlexaPaymentSkill.jar" />
       </list>
@@ -193,7 +216,7 @@
       <updated>1544403248641</updated>
       <workItem from="1544403259380" duration="1078000" />
       <workItem from="1544404596228" duration="16000" />
-      <workItem from="1544404667868" duration="9699000" />
+      <workItem from="1544404667868" duration="16147000" />
     </task>
     <servers />
   </component>
@@ -210,9 +233,27 @@
     <history-entry file="unitTestCheck - 2018.12.09 at 22h 10m 17s.xml">
       <configuration name="unitTestCheck" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="unitTestCheck - 2018.12.10 at 16h 59m 34s.xml">
+      <configuration name="unitTestCheck" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTestCheck_handleRequest - 2018.12.11 at 10h 28m 20s.xml">
+      <configuration name="unitTestCheck.handleRequest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTestCheck_handleRequest - 2018.12.11 at 10h 29m 29s.xml">
+      <configuration name="unitTestCheck.handleRequest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTestCheck_handleRequest - 2018.12.11 at 10h 35m 03s.xml">
+      <configuration name="unitTestCheck.handleRequest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTestCheck_handleRequest - 2018.12.11 at 10h 36m 55s.xml">
+      <configuration name="unitTestCheck.handleRequest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="unitTestCheck_handleRequest - 2018.12.11 at 12h 47m 55s.xml">
+      <configuration name="unitTestCheck.handleRequest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10793000" />
+    <option name="totallyTimeSpent" value="17241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -256,41 +297,46 @@
     <entry file="file://$PROJECT_DIR$/AlexaPaymentSkill.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTestCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PaymentSkillHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/amazon/alexa/ask-sdk-core/2.9.2/ask-sdk-core-2.9.2.jar!/com/amazon/ask/CustomSkill.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        <state relative-caret-position="133">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SandboxHandler.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/amazon/alexa/ask-sdk-runtime/2.9.2/ask-sdk-runtime-2.9.2.jar!/com/amazon/ask/request/dispatcher/impl/BaseRequestDispatcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+        <state relative-caret-position="133">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/handler/SandboxHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTestCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PaymentSkillStreamHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -362,7 +408,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>com.amazonaws:aws-java-sdk-lambda:1.11.32</last-edited>
+          <last-edited>org.apache.logging.log4j:log4j-core:2.11.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

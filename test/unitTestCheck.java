@@ -8,7 +8,7 @@ public class unitTestCheck {
 
     @org.junit.Test
     public void handleRequest() {
-        PaymentSkillHandler handler = new PaymentSkillHandler();
+        PaymentSkillStreamHandler handler = new PaymentSkillStreamHandler();
         try {
             StringInputStream inputStream = new StringInputStream("{\n" +
                     "  \"version\": \"1.0\",\n" +

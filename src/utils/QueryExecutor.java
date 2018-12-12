@@ -11,12 +11,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class QueryExecutor {
-	
-	  public static String getDateString(Date date){
-		  DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd"); 
-		  String dateString = dateFormat.format(date);  
-		  return dateString;
-	  }
 
 	  public static int validateUser(int passcode) {
 
@@ -95,10 +89,10 @@ public class QueryExecutor {
 					"WHERE TXN_DATE > curdate() - " + day +
 					" AND ORGANIZATION_ID = " + organizationId);
 			if(rs.next()){
-				return "today you have total of "
+				return "  Today you have total of "
 						+ rs.getString("TXN_COUNT")
-						+ " transactions with a new approval rate of "
-						+ (int)Double.parseDouble(rs.getString("SUCCESS_RATE"));
+						+ " transactions with a net approval rate of "
+						+ (int)Double.parseDouble(rs.getString("SUCCESS_RATE")) + " percent";
 			}
 		}catch(Exception e){
 			System.out.println(e);
@@ -118,7 +112,7 @@ public class QueryExecutor {
 				return "today there are "
 						+ rs.getString("total")
 						+ " transactions with a average approval rate of "
-						+ (int)Double.parseDouble(rs.getString("average"));
+						+ (int)Double.parseDouble(rs.getString("average")) + " percent";
 			}
 		}catch(Exception e){
 			System.out.println(e);
@@ -138,7 +132,7 @@ public class QueryExecutor {
 				return "today there are "
 						+ rs.getString("total")
 						+ " transactions with a average approval rate of "
-						+ (int)Double.parseDouble(rs.getString("average"));
+						+ (int)Double.parseDouble(rs.getString("average")) + " percentage";
 			}
 		}catch(Exception e){
 			System.out.println(e);
@@ -146,67 +140,4 @@ public class QueryExecutor {
 
 		return "your transactions are yet to be reflected in the system please try again later";
 	}
-
-
-	public static String getAdminSummaries(String datestring){
-	  try{
-		  Connection c = DBConnector.getInstance();
-		  Statement stmt = c.createStatement();
-		  ResultSet rs = stmt.executeQuery("select sum(TRANSACTION_SUMMARY.TXN_COUNT) as txn_cnt, sum(TRANSACTION_SUMMARY.APPROVED_TXN) as aprv_txns from TRANSACTION_SUMMARY where TRANSACTION_SUMMARY.TXN_DATE>="+datestring);
-		  if(rs.next()){
-			  return rs.getInt("txn_cnt")+" "+rs.getInt("aprv_txns");
-		  }
-		  return "invalid user";
-	  }catch(Exception e){
-		  System.out.println(e);
-	  }
-	  return "invalid user";  
-  }
-  
-  public static String topXByTxnCount(int numResults){
-	  try{
-		  StringBuilder result = new StringBuilder();
-		  Connection c = DBConnector.getInstance();
-		  Statement stmt = c.createStatement();
-		  ResultSet rs = stmt.executeQuery("Select ORGANIZATION_ID, sum(TXN_COUNT) as sumTxns from TRANSACTION_SUMMARY group by ORGANIZATION_ID order by TXN_COUNT desc limit "+numResults);
-		  while(rs.next()){
-			  result.append(rs.getString("ORGANIZATION_ID")+" "+rs.getInt("sumTxns")+"\n");
-		  }
-		  return result.toString();
-	  }catch(Exception e){
-		  System.out.println(e);
-	  }
-	  return "invalid user"; 
-  }
-  
-  public static String worstXByApprovalRate(int numResults){
-	  try{
-		  StringBuilder result = new StringBuilder();
-		  Connection c = DBConnector.getInstance();
-		  Statement stmt = c.createStatement();
-		  ResultSet rs = stmt.executeQuery("Select ORGANIZATION_ID, sum(APPROVED_TXN)/sum(TXN_COUNT) as rate from TRANSACTION_SUMMARY group by ORGANIZATION_ID order by rate asc limit "+numResults);
-		  while(rs.next()){
-			  result.append(rs.getString("ORGANIZATION_ID")+" "+rs.getDouble("rate")+"\n");
-		  }
-		  return result.toString();
-	  }catch(Exception e){
-		  System.out.println(e);
-	  }
-	  return "invalid user";  
-  }
-  
-  public static String getNumOpenEvents(){
-	  try{
-		  Connection c = DBConnector.getInstance();
-		  Statement stmt = c.createStatement();
-		  ResultSet rs = stmt.executeQuery("select count(*) as count from EVENT where EVENT_STATUS = 'open'");
-		  if(rs.next()){
-			  return Integer.toString(rs.getInt("count"));
-		  }
-		  return "invalid user";
-	  }catch(Exception e){
-		  System.out.println(e);
-	  }
-	  return "invalid user"; 
-  }  
 }

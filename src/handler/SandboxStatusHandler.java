@@ -33,9 +33,9 @@ public class SandboxStatusHandler implements com.amazon.ask.dispatcher.request.h
             connection.connect();
 
             if (connection.getResponseCode() == 200) {
-                return "sandbox is online thanks to genius interns";
+                return "  Sandbox is online thanks to genius interns";
             } else {
-                return "sandbox is offline";
+                return "  Sandbox is offline";
             }
         } catch (Exception e) {
             return "error in connecting please contact world pay";

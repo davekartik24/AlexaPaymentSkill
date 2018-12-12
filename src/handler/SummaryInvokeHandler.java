@@ -23,8 +23,8 @@ public class SummaryInvokeHandler implements com.amazon.ask.dispatcher.request.h
         sessionAttributes.put("sessionState", "STARTED");
 
         return handlerInput.getResponseBuilder()
-                .withSpeech("please provide with your passcode")
-                .withReprompt("please provide with your passcode")
+                .withSpeech("  Please provide your passcode")
+                .withReprompt("  Please provide with your passcode")
                 .build();
     }
 }

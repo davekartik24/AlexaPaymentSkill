@@ -49,11 +49,15 @@ public class PasscodeOutputHandler implements com.amazon.ask.dispatcher.request.
             }
         }
         else if(code>0){
+
             if(days == -1) {
                 outTest = getMerchantSummaries(code);
             } else {
                 outTest = getMerchantSummaries(code, days);
             }
+
+            outTest = getMerchantSummaries(code);
+
         }
         else{
             outTest = "there seems some issue with your passcode please contact customer service";

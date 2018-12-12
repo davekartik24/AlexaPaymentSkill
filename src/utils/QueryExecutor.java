@@ -52,18 +52,17 @@ public class QueryExecutor {
     return "invalid user";
   }
   
-  public static int getOrganizationId(String username) throws SQLException, ClassNotFoundException {
+  public static int getOpenEvent() throws SQLException, ClassNotFoundException {
 	    try {
 	      Connection c =  DBConnector.getInstance();
 	      Statement stmt = c.createStatement();
-	      ResultSet rs = stmt.executeQuery("select * from USR_USERS");
+	      ResultSet rs = stmt.executeQuery("select count(*) as openEvents from EVENT where EVENT_STATUS = 'open'");
 	      if(rs.next()){
-	        return rs.getInt("ORGANIZATION_ID");
+	        return rs.getInt("openEvents");
 	      }
-	      return -1;
 	    }catch(Exception e){
 	      System.out.println(e);}
-	    return -2;
+	    return 0;
 	  }
     
   public static String getMerchantSummaries(int organizationId){

@@ -6,7 +6,12 @@ public class PaymentSkillStreamHandler extends SkillStreamHandler   {
 
     public PaymentSkillStreamHandler() {
         super(Skills.standard()
-                .addRequestHandlers(new SandboxStatusHandler(), new SummaryInvokeHandler(), new PasscodeOutputHandler(), new transactionHandler())
+                .addRequestHandlers(
+                    new SandboxStatusHandler(),
+                    new SummaryInvokeHandler(),
+                    new PasscodeOutputHandler(),
+                    new transactionHandler(),
+                    new OpenEventHandler())
                 .addExceptionHandler(new ExceptionHandler())
                 .build());
     }

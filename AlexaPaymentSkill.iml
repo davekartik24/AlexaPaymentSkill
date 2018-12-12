@@ -21,5 +21,6 @@
     <orderEntry type="library" name="com.amazon.alexa:ask-sdk:2.9.2" level="project" />
     <orderEntry type="library" name="com.amazonaws:aws-java-sdk-lambda:1.11.32" level="project" />
     <orderEntry type="library" name="org.apache.logging.log4j:log4j-core:2.11.1" level="project" />
+    <orderEntry type="library" name="org.wisdom-framework:mysql-connector-java:5.1.34_1" level="project" />
   </component>
 </module>

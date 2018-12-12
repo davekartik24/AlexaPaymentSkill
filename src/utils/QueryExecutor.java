@@ -86,10 +86,11 @@ public class QueryExecutor {
 			Statement stmt = c.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT SUM(TXN_COUNT) AS TXN_COUNT, SUM(SUCCESS_RATE)/COUNT(*) as SUCCESS_RATE " +
 					"FROM genie.TRANSACTION_SUMMARY " +
-					"WHERE TXN_DATE > curdate() - " + day +
+					"WHERE TXN_DATE >= curdate() - " + day +
 					" AND ORGANIZATION_ID = " + organizationId);
+
 			if(rs.next()){
-				return "  Today you have total of "
+						return "for last "+ day+" days you have total of "
 						+ rs.getString("TXN_COUNT")
 						+ " transactions with a net approval rate of "
 						+ (int)Double.parseDouble(rs.getString("SUCCESS_RATE")) + " percent";
@@ -129,7 +130,7 @@ public class QueryExecutor {
 					"FROM genie.TRANSACTION_SUMMARY " +
 					"WHERE TXN_DATE > curdate() - " + day);
 			if(rs.next()){
-				return "today there are "
+				return "for last "+day+" days there are "
 						+ rs.getString("total")
 						+ " transactions with a average approval rate of "
 						+ (int)Double.parseDouble(rs.getString("average")) + " percentage";

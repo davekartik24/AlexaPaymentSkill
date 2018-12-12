@@ -72,7 +72,7 @@ public class QueryExecutor {
 		  ResultSet rs = stmt.executeQuery("SELECT TXN_COUNT, SUCCESS_RATE " +
 				  								"FROM genie.TRANSACTION_SUMMARY " +
 				  								"WHERE TXN_DATE = curdate() " +
-											    "AND ORGANIZATION_ID = " + organizationId + ")");
+											    "AND ORGANIZATION_ID = " + organizationId);
 		  if(rs.next()){
 			  return "today you have total of "
 					  + rs.getString("TXN_COUNT")

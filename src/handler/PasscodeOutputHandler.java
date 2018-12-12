@@ -36,7 +36,7 @@ public class PasscodeOutputHandler implements com.amazon.ask.dispatcher.request.
             outTest = getAdminSummaries();
         }
         else if(code>0){
-            outTest = getMerchantSummaries(passcode);
+            outTest = getMerchantSummaries(code);
         }
         else{
             outTest = "there seems some issue with your passcode please contact customer service";

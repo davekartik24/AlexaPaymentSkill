@@ -73,7 +73,7 @@ public class QueryExecutor {
 		  ResultSet rs = stmt.executeQuery("SELECT TXN_COUNT, SUCCESS_RATE " +
 				  								"FROM genie.TRANSACTION_SUMMARY " +
 				  								"WHERE TXN_DATE = curdate() " +
-											    "AND ORGANIZATION_ID = " + organizationId + ")");
+											    "AND ORGANIZATION_ID = " + organizationId);
 		  if(rs.next()){
 			  return "today you have total of "
 					  + rs.getString("TXN_COUNT")
@@ -87,6 +87,27 @@ public class QueryExecutor {
 	  return "your transactions are yet to be reflected in the system please try again later";
   }
 
+	public static String getMerchantSummaries(int organizationId, int day){
+		try{
+			Connection c = DBConnector.getInstance();
+			Statement stmt = c.createStatement();
+			ResultSet rs = stmt.executeQuery("SELECT SUM(TXN_COUNT) AS TXN_COUNT, SUM(SUCCESS_RATE)/COUNT(*) as SUCCESS_RATE " +
+					"FROM genie.TRANSACTION_SUMMARY " +
+					"WHERE TXN_DATE > curdate() - " + day +
+					" AND ORGANIZATION_ID = " + organizationId);
+			if(rs.next()){
+				return "today you have total of "
+						+ rs.getString("TXN_COUNT")
+						+ " transactions with a new approval rate of "
+						+ (int)Double.parseDouble(rs.getString("SUCCESS_RATE"));
+			}
+		}catch(Exception e){
+			System.out.println(e);
+		}
+
+		return "your transactions are yet to be reflected in the system please try again later";
+	}
+
 	public static String getAdminSummaries(){
 		try{
 			Connection c = DBConnector.getInstance();
@@ -94,6 +115,26 @@ public class QueryExecutor {
 			ResultSet rs = stmt.executeQuery("SELECT SUM(TXN_COUNT) as total,SUM(SUCCESS_RATE)/count(*) as average " +
 					"FROM genie.TRANSACTION_SUMMARY " +
 					"WHERE TXN_DATE = curdate()");
+			if(rs.next()){
+				return "today there are "
+						+ rs.getString("total")
+						+ " transactions with a average approval rate of "
+						+ (int)Double.parseDouble(rs.getString("average"));
+			}
+		}catch(Exception e){
+			System.out.println(e);
+		}
+
+		return "your transactions are yet to be reflected in the system please try again later";
+	}
+
+	public static String getAdminSummaries(int day){
+		try{
+			Connection c = DBConnector.getInstance();
+			Statement stmt = c.createStatement();
+			ResultSet rs = stmt.executeQuery("SELECT SUM(TXN_COUNT) as total,SUM(SUCCESS_RATE)/count(*) as average " +
+					"FROM genie.TRANSACTION_SUMMARY " +
+					"WHERE TXN_DATE > curdate() - " + day);
 			if(rs.next()){
 				return "today there are "
 						+ rs.getString("total")

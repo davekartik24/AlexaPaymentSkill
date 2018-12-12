@@ -7,6 +7,7 @@ import com.amazon.ask.request.Predicates;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Map;
 import java.util.Optional;
 
 public class SandboxStatusHandler implements com.amazon.ask.dispatcher.request.handler.RequestHandler {
@@ -18,11 +19,11 @@ public class SandboxStatusHandler implements com.amazon.ask.dispatcher.request.h
 
     @Override
     public Optional<Response> handle(HandlerInput handlerInput) {
-        String speechText = sandboxStatus();
+        String speechText = sandboxStatus(handlerInput);
         return handlerInput.getResponseBuilder().withSpeech(speechText).build();
     }
 
-    public String sandboxStatus() {
+    public String sandboxStatus(HandlerInput handlerInput) {
 
         try {
             URL siteURL = new URL("https://www.testvantivcnp.com/sandbox/status");

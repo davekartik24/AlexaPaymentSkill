@@ -7,22 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea696a49-1e6b-4c2f-a79a-686413c727c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AlexaPaymentSkill_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/AlexaPaymentSkill_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlexaPaymentSkill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlexaPaymentSkill.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/AlexaPaymentSkill_jar/AlexaPaymentSkill.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/AlexaPaymentSkill_jar/AlexaPaymentSkill.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlexaPaymentSkill/PaymentSkillStreamHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlexaPaymentSkill/PaymentSkillStreamHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlexaPaymentSkill/handler/PasscodeOutputHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlexaPaymentSkill/handler/PasscodeOutputHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlexaPaymentSkill/handler/SandboxHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlexaPaymentSkill/handler/SummaryInvokeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlexaPaymentSkill/handler/SummaryInvokeHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DBConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/DBConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PaymentSkillStreamHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentSkillStreamHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QueryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/QueryExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/handler/PasscodeOutputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/PasscodeOutputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/handler/SandboxHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/SandboxStatusHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/handler/SummaryInvokeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/SummaryInvokeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/connectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handler/SandboxStatusHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/SandboxStatusHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handler/SummaryHandler.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,10 +20,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/QueryExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="1564">
               <caret line="100" column="30" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
             </state>
           </provider>
@@ -55,6 +42,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/handler/SandboxStatusHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -63,14 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/handler/SummaryHandler.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PaymentSkillStreamHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="8" column="119" selection-start-line="8" selection-start-column="119" selection-end-line="8" selection-end-column="119" />
             </state>
           </provider>
         </entry>
@@ -98,14 +94,14 @@
         <option value="$PROJECT_DIR$/src/utils/DBConnector.java" />
         <option value="$PROJECT_DIR$/src/handler/transactionHandler.java" />
         <option value="$PROJECT_DIR$/src/handler/SandboxHandler.java" />
-        <option value="$PROJECT_DIR$/src/handler/SandboxStatusHandler.java" />
         <option value="$PROJECT_DIR$/src/handler/SummaryInvokeHandler.java" />
         <option value="$PROJECT_DIR$/src/handler/ExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/PaymentSkillStreamHandler.java" />
-        <option value="$PROJECT_DIR$/src/handler/SummaryHandler.java" />
         <option value="$PROJECT_DIR$/src/handler/PasscodeOutputHandler.java" />
         <option value="$PROJECT_DIR$/test/test.java" />
         <option value="$PROJECT_DIR$/src/utils/QueryExecutor.java" />
+        <option value="$PROJECT_DIR$/src/handler/SummaryHandler.java" />
+        <option value="$PROJECT_DIR$/src/PaymentSkillStreamHandler.java" />
+        <option value="$PROJECT_DIR$/src/handler/SandboxStatusHandler.java" />
       </list>
     </option>
   </component>
@@ -200,7 +196,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544597999801" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544598762305" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -284,7 +280,7 @@
       <workItem from="1544403259380" duration="1078000" />
       <workItem from="1544404596228" duration="16000" />
       <workItem from="1544404667868" duration="26246000" />
-      <workItem from="1544586607314" duration="9625000" />
+      <workItem from="1544586607314" duration="10387000" />
     </task>
     <servers />
   </component>
@@ -321,7 +317,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36965000" />
+    <option name="totallyTimeSpent" value="37727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -407,23 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/SandboxStatusHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PaymentSkillStreamHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/handler/ExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -468,6 +447,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/handler/SummaryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="15" column="68" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PaymentSkillStreamHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="119" selection-start-line="8" selection-start-column="119" selection-end-line="8" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/handler/SandboxStatusHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/handler/PasscodeOutputHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -480,25 +493,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/QueryExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="1564">
           <caret line="100" column="30" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/SummaryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

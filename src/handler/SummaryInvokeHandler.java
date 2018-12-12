@@ -24,7 +24,7 @@ public class SummaryInvokeHandler implements com.amazon.ask.dispatcher.request.h
 
         return handlerInput.getResponseBuilder()
                 .withSpeech("please provide with your passcode")
-                .withReprompt("your passcode")
+                .withReprompt("please provide with your passcode")
                 .build();
     }
 }
